@@ -4,89 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Quantum Computing History</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-            background-color: #4caf50;
-            padding: 1em;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-        nav ul li {
-            margin: 0;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-        header {
-            text-align: center;
-            padding: 2em;
-            background-color: #e8f5e9;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        main {
-            padding: 2em;
-            line-height: 1.6;
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        section h2 {
-            font-size: 1.8em;
-            color: #4caf50;
-        }
-        section p {
-            margin: 0.5em 0;
-        }
-        .hidden-links {
-            display: none;
-            margin-top: 1em;
-            font-size: 0.9em;
-            color: #555;
-        }
-        .learn-more-btn {
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            padding: 0.5em 1em;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 1em;
-        }
-        .learn-more-btn:hover {
-            background-color: #45a049;
-        }
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #4caf50;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="css folder/style.css">
     <script>
         function toggleLinks(id) {
             const links = document.getElementById(id);
@@ -97,6 +15,7 @@
             }
         }
     </script>
+   
 </head>
 <body>
     <header>
@@ -140,9 +59,21 @@
                 Source: Wired: Quantum Computing
             </div>
         </section>
+
+
     </main>
     <footer>
         <p>&copy; 2025 Quantum Computing 101</p>
     </footer>
+    <script src="javascript/javscript.js">
+         function toggleLinks(id) {
+            const links = document.getElementById(id);
+            if (links.style.display === "none" || links.style.display === "") {
+                links.style.display = "block";
+            } else {
+                links.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

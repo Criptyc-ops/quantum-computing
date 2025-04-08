@@ -156,3 +156,26 @@ footer {
 #toggle-menu-btn.open div:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+
+#hero {
+    background-image: url(images/a-chosen-soul-IiX0lY7rDhM-unsplash.jpg); /* Update with the correct relative path to the image */
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensures text is readable */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for better contrast */
+    padding: 50px 20px; /* Adds spacing inside the header */
+    position: relative;
+    z-index: 1;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay */
+    z-index: -1;
+}
